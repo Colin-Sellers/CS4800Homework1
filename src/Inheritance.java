@@ -20,6 +20,10 @@ public class Inheritance {
         printEmployee(employee7);
     }
 
+    public static void printEmployee(Employee employee)
+    {
+        System.out.printf("%-14s%-14s%-14s", employee.getFirstName(), employee.getLastName(), employee.getSocialSecurtiyNumber());
+    }
     public static void printEmployee(SalariedEmployee employee)
     {
         System.out.printf("%-14s%-14s%-14s", employee.getFirstName(), employee.getLastName(), employee.getSocialSecurtiyNumber());
@@ -103,6 +107,7 @@ class Employee
     {
         return socialSecurityNumber;
     }
+
 }
 
 class SalariedEmployee extends Employee
